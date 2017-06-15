@@ -49,8 +49,10 @@ body {
   vertical-align: top;
 }
 .cover-container {
-  margin-right: auto;
-  margin-left: auto;
+  /*margin-right: auto;
+  margin-left: auto;*/
+  min-width: 100%;
+  min-height: 100%;
 }
 
 /* Padding for spacing */
