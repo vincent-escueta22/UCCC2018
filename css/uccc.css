@@ -1,0 +1,12 @@
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.navbar li { color: #000 }
+
+.img-responsive{
+  min-height : 5000;
+  min-width : 5000;
+}
