@@ -20,6 +20,12 @@
   transition: background-color 200ms linear;
 }
 
+hr {
+    max-width: 50px;
+    border-color: #fff;
+    border-width: 3px;
+}
+
 header {
     position: relative;
     width: 100%;
