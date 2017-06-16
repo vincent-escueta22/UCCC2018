@@ -14,3 +14,8 @@
 .img-circle{
   padding:15px;
 }
+
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
