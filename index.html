@@ -43,7 +43,7 @@
     <![endif]-->
   </head>
 
-  <body id="page-top">
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- <div class="site-wrapper"> -->
 
@@ -67,25 +67,26 @@
           <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
               <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> -->
                 <a class="navbar-brand page-scroll hvr-grow" href="#page-top">UCCC 2018</a>
               </div>
 
-              <div class="collapse navbar-collapse" id="myNavbar">
+              <div class="collapse navbar-collapse myNavbar">
               <ul class="nav navbar-nav navbar-right">
-                <li><a class="page-scroll hvr-grow" href="#page-top">Home</a></li>
-                <li><a class="page-scroll hvr-grow" href="#theme">Theme</a></li>
+                <li class="hidden"><a class="page-scroll hvr-grow" href="#page-top">Home</a></li>
                 <li><a class="page-scroll hvr-grow" href="#about">About</a></li>
                 <li><a class="page-scroll hvr-grow" href="#speakers">Speakers</a></li>
                 <li><a class="page-scroll hvr-grow" href="#register">Register</a></li>
                 <li><a class="page-scroll hvr-grow" href="#donate">Donate</a></li>
                 <li><a class="page-scroll hvr-grow" href="#contact">Contact</a></li>
-                <li><a class="page-scroll hvr-grow" href="#">???</a></li>
+                <!-- <li><a class="page-scroll hvr-grow" href="#">???</a></li> -->
               </ul>
               </div>
             </div>
@@ -97,27 +98,30 @@
       <!-- </div> -->
 
     <!-- </div> -->
-    <header>
+    <header class="header-section">
        <div class="header-content">
           <div class="header-content-inner">
             <h1 class="cover-heading">Born of the Spirit</h1>
             <hr>
             <p class="lead">Where University of California Catholics Unite</p>
             <a href="#theme" class="hvr-grow page-scroll"><i class="fa fa-angle-double-down fa-5x wow bounceIn" data-wow-delay=".1s"></i><h2>Learn More!</h2></a>
-            <a href="#register" class="hvr-grow page-scroll"><i class="fa fa-registered fa-5x wow bounceIn" data-wow-delay=".1s"></i><h2>Register Now!</h2></a>
-            <div class="row">
-              <p>
-              "What is born of flesh is flesh and what is born of spirit is spirit.  Do not be amazed that I told you, ‘You must be born from above.’ The wind blows where it wills, and you can hear the sound it makes, but you do not know where it comes from or where it goes; so it is with everyone who is born of the Spirit.” - John 3:6‭-‬8 NABRE
-              </p>
-            </div>
+            <h3>or <a data-toggle="modal" data-target="#registerModal">Register Now!</a></h3>
           </div>
         </div>
     </header>
-
-    <section id="theme">
-      <h1> Theme </h1>
+    <article>
+      <div class="article-content">
+         <div class="article-content-inner">
+              <h1>
+              "What is born of flesh is flesh and what is born of spirit is spirit.  Do not be amazed that I told you, ‘You must be born from above.’ The wind blows where it wills, and you can hear the sound it makes, but you do not know where it comes from or where it goes; so it is with everyone who is born of the Spirit.” - John 3:6‭-‬8 NABRE
+              </h1>
+          </div>
+    </article>
+    <!-- <section id="theme">
+     <div class="section-content">
+      <div class="section-content-inner">
+      <h1 class="cover-heading"> Theme </h1>
       <div class="container">
-       <!-- Example row of columns -->
         <div class="row">
           <div class="col-md-4">
             <p>
@@ -136,117 +140,50 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="about">
-     <div class="col-lg-12 text-center">
-      <h1 class="section-heading"> About </h1>
+      </div>
      </div>
+    </section> -->
+
+    <section id="about" class="about-section">
+     <div class="container">
+     <div class="section-content">
+      <div class="col-lg-12 text-center">
+       <h1 class="section-heading"> About </h1>
+      </div>
       <div class="container">
        <!-- Example row of columns -->
         <div class="row">
-         <div class="col-md-3">
+         <div class="col-md-2">
+          <a class="hvr-grow" data-toggle="modal" data-target="#videoModal">
+          <i class="fa fa-paw fa-5x wow bounceIn" data-wow-delay=".1s"></i><h3>Theme</h3></a>
+         </div>
+         <div class="col-md-2">
           <a class="hvr-grow" data-toggle="modal" data-target="#videoModal">
           <i class="fa fa-play fa-5x wow bounceIn" data-wow-delay=".1s"></i><h3>2017 Recap & 2018 Reveal</h3></a>
-           <div id="videoModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">2017 Recap & 2018 Reveal</h4>
-                </div>
-                <div class="modal-body">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
          </div>
-         <div class="col-md-3">
+         <div class="col-md-2">
          <a class="hvr-grow" data-toggle="modal" data-target="#historyModal">
           <i class="fa fa-header fa-5x wow bounceIn" data-wow-delay=".1s"></i><h3>UCCC History</h3></a>
-           <div id="historyModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">UCCC History</h4>
-                </div>
-                <div class="modal-body">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
          </div>
-         <div class="col-md-3">
+         <div class="col-md-2">
           <a class="hvr-grow" data-toggle="modal" data-target="#mishModal">
           <i class="fa fa-ship fa-5x wow bounceIn" data-wow-delay=".1s"></i><h3>Mission Statement</h3></a>
-           <div id="mishModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Mission Statement</h4>
-                </div>
-                <div class="modal-body">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
          </div>
-         <div class="col-md-3">
+         <div class="col-md-2">
           <a class="hvr-grow" data-toggle="modal" data-target="#staffModal">
           <i class="fa fa-user-circle-o fa-5x wow bounceIn" data-wow-delay=".1s"></i><h3>UCCC 2018 Staff</h3></a>
-           <div id="staffModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">UCCC 2018 Staff</h4>
-                </div>
-                <div class="modal-body">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
          </div>
-         <!-- <div class="col-md-3">
-          <a href="#" class="btn btn-lg btn-default">Program Schedule</a>
-         </div>
-         <div class="col-md-3">
-          <a href="#speakers" class="btn btn-lg btn-default">Speakers</a>
-         </div> -->
         </div>
       </div>
+     </div>
+     </div>
     </section>
 
-    <section id="speakers">
-     <div class="col-lg-12 text-center">
-      <h1 class="section-heading"> The Players </h1>
-     </div>
+    <section id="speakers" class="speaker-section">
+     <div class="section-content">
+      <div class="col-lg-12 text-center">
+       <h1 class="section-heading"> The Players </h1>
+      </div>
       <div class="container">
        <!-- Example row of columns -->
        <div class="row">
@@ -257,82 +194,18 @@
            <h2>Mew2King</h2>
            <img src="img/m2k.jpg" class="img-circle hvr-grow" alt="m2k" width="256" height="256">
           </a>
-          <div id="m2kModal" class="modal fade" role="dialog">
-
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Mew2King</h4>
-                  <img src="img/m2k.jpg" class="img-circle hvr-grow" alt="hbox" width="256" height="256">
-                </div>
-                <div class="modal-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-
-            </div>
-           </div>
-          </div>
-
+         </div>
         <div class="col-md-4 ">
           <a class="hvr-grow" data-toggle="modal" data-target="#HBModal">
            <h2>HungryBox</h2>
            <img src="img/hbox.jpg" class="img-circle hvr-grow" alt="hbox" width="256" height="256">
           </a>
-           <div id="HBModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">HungryBox</h4>
-                  <img src="img/hbox.jpg" class="img-circle hvr-grow" alt="hbox" width="256" height="256">
-                </div>
-                <div class="modal-body">
-                  <p>The most boring player to watch. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat. </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-
-            </div>
-           </div>
          </div>
-
-
          <div class="col-md-4">
           <a class="hvr-grow" data-toggle="modal" data-target="#mang0Modal">
            <h2>Mang0</h2>
            <img src="img/mang0.jpg" class="img-circle hvr-grow" alt="mang0" width="256" height="256">
           </a>
-           <div id="mang0Modal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Mang0</h4>
-                  <img src="img/mang0.jpg" class="img-circle hvr-grow" alt="mango0" width="256" height="256">
-                </div>
-                <div class="modal-body">
-                  <p>Idk he is drunk all the time so he might not show up. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-
-            </div>
-           </div>
          </div>
        </div>
         <div class="row">
@@ -341,54 +214,12 @@
            <h2>Private</h2>
            <img src="img/matt.jpg" class="img-circle hvr-grow" alt="private" width="256" height="256">
           </a>
-           <div id="mattModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Private</h4>
-                  <img src="img/matt.jpg" class="img-circle hvr-grow" alt="private" width="256" height="256">
-                </div>
-                <div class="modal-body">
-                    <p>Marth main who plays in tournaments, but never makes it past the first round. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-
-            </div>
-           </div>
          </div>
-
-
          <div class="col-md-4">
           <a class="hvr-grow" data-toggle="modal" data-target="#zacModal">
            <h2>Table Bread</h2>
            <img src="img/zac.jpg" class="img-circle hvr-grow" alt="tablebread" width="256" height="256">
           </a>
-           <div id="zacModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Table Bread</h4>
-                  <img src="img/zac.jpg" class="img-circle hvr-grow" alt="bubbagump" width="256" height="256">
-                </div>
-                <div class="modal-body">
-                   <p>Peach main that watches too many Sheik videos that says he can play CS:GO, but has no clue that is going on. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat. </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-
-            </div>
-           </div>
          </div>
         
          <div class="col-md-4">
@@ -396,159 +227,38 @@
            <h2>BubbaGump</h2>
            <img src="img/vincent.jpg" class="img-circle hvr-grow" alt="bubbagump" width="256" height="256">
           </a>
-           <div id="vincentModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">BubbaGump</h4>
-                  <img src="img/vincent.jpg" class="img-circle hvr-grow" alt="bubbagump" width="256" height="256">
-                </div>
-                <div class="modal-body">
-                  <p>This guy plays Protoss for the Berkeley team, but does nothing and is carried by the rest of the team. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-
-            </div>
-           </div>
          </div>
        </div>
        <div class="col-md-12">
         <a class="hvr-grow" data-toggle="modal" data-target="#speakerModal">
           <i class="fa fa-users fa-5x wow bounceIn" data-wow-delay=".1s"></i><h3>More Speakers</h3></a>
-           <div id="speakerModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Speakers</h4>
-                </div>
-                <div class="modal-body">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-      </div>
     </section>
-    <section id="register">
-     <div class="col-lg-12 text-center">
-      <h1 class="section-heading"> Register </h1>
-     </div>
+    <article>
+      <div class="article-content">
+         <div class="article-content-inner">
+              <h1>
+              "On the evening of that first day of the week, when the doors were locked, where the disciples were, for fear of the Jews, Jesus came and stood in their midst and said to them, “Peace be with you.” When he had said this, he showed them his hands and his side. The disciples rejoiced when they saw the Lord.  [Jesus] said to them again, “Peace be with you. As the Father has sent me, so I send you.” And when he had said this, he breathed on them and said to them, “Receive the holy Spirit.  Whose sins you forgive are forgiven them, and whose sins you retain are retained.” - John 20:19‭-‬23 NABRE
+              </h1>
+          </div>
+    </article>
+    <section id="register" class="register-section">
+     <div class="section-content">
+      <div class="col-lg-12 text-center">
+       <h1 class="section-heading"> Register </h1>
+      </div>
       <div class="container">
        <!-- Example row of columns -->
         <div class="row">
          <div class="col-md-12">
           <a class="hvr-grow" data-toggle="modal" data-target="#registerModal">
           <i class="fa fa-id-badge fa-5x wow bounceIn" data-wow-delay=".1s"></i><h3>Register Now!</h3></a>
-           <div id="registerModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Register Now!</h4>
-                </div>
-                <div class="modal-body">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
          </div>
-        </div>
-        <div class="row">
-         <div class="col-md-4">
-          <a class="hvr-grow" data-toggle="modal" data-target="#religiousModal">
-          <i class="fa fa-plus fa-5x wow bounceIn" data-wow-delay=".1s"></i>
-          <p>For Religious</p></a>
-           <div id="religiousModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">For Religious</h4>
-                </div>
-                <div class="modal-body">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-         </div>
-         <div class="col-md-4">
-         <a class="hvr-grow" data-toggle="modal" data-target="#exhibitionModal">
-          <i class="fa fa-address-book fa-5x wow bounceIn" data-wow-delay=".1s"></i>
-          <p>For Exhibition</p></a>
-           <div id="exhibitionModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">For Exhibition</h4>
-                </div>
-                <div class="modal-body">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-         </div>
-         <div class="col-md-4">
-          <a class="hvr-grow" data-toggle="modal" data-target="#hostModal">
-          <i class="fa fa-home fa-5x wow bounceIn" data-wow-delay=".1s"></i>
-          <p>Volunteer to Host</p></a>
-           <div id="hostModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Volunteer to Host</h4>
-                </div>
-                <div class="modal-body">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-         </div>
-         <!-- <div class="col-md-3">
-          <a href="#" class="btn btn-lg btn-default">Program Schedule</a>
-         </div>
-         <div class="col-md-3">
-          <a href="#speakers" class="btn btn-lg btn-default">Speakers</a>
-         </div> -->
         </div>
       </div>
+     </div>
     </section>
-    <section id="donate">
+    <section id="donate" class="donate-section">
+     <div class="section-content">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -573,8 +283,18 @@
           </div>
         </div>
       </div>
+     </div>
     </section>
-    <section id="contact">
+    <article>
+      <div class="article-content">
+         <div class="article-content-inner">
+              <h1>
+              When the time for Pentecost was fulfilled, they were all in one place together.  And suddenly there came from the sky a noise like a strong driving wind, and it filled the entire house in which they were.  Then there appeared to them tongues as of fire, which parted and came to rest on each one of them.  And they were all filled with the holy Spirit and began to speak in different tongues, as the Spirit enabled them to proclaim. - Acts 2:1‭-‬4 NABRE
+              </h1>
+          </div>
+    </article>
+    <section id="contact" class=contact-section>
+     <div class="section-content">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -610,7 +330,337 @@
           </div>
         </div>
       </div>
+     </div>
     </section>
+
+    <!-- <section id="modals"> -->
+    <div id="videoModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">2017 Recap & 2018 Reveal</h4>
+                </div>
+                <div class="modal-body">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div id="historyModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">UCCC History</h4>
+                </div>
+                <div class="modal-body">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div id="mishModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Mission Statement</h4>
+                </div>
+                <div class="modal-body">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div id="staffModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">UCCC 2018 Staff</h4>
+                </div>
+                <div class="modal-body">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="m2kModal" class="modal fade" role="dialog">
+
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Mew2King</h4>
+                  <img src="img/m2k.jpg" class="img-circle hvr-grow" alt="hbox" width="256" height="256">
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+           </div>
+           <div id="HBModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">HungryBox</h4>
+                  <img src="img/hbox.jpg" class="img-circle hvr-grow" alt="hbox" width="256" height="256">
+                </div>
+                <div class="modal-body">
+                  <p>The most boring player to watch. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat. </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+           </div>
+           <div id="mang0Modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Mang0</h4>
+                  <img src="img/mang0.jpg" class="img-circle hvr-grow" alt="mango0" width="256" height="256">
+                </div>
+                <div class="modal-body">
+                  <p>Idk he is drunk all the time so he might not show up. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+           </div>
+           <div id="mattModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Private</h4>
+                  <img src="img/matt.jpg" class="img-circle hvr-grow" alt="private" width="256" height="256">
+                </div>
+                <div class="modal-body">
+                    <p>Marth main who plays in tournaments, but never makes it past the first round. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+           </div>
+           <div id="zacModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Table Bread</h4>
+                  <img src="img/zac.jpg" class="img-circle hvr-grow" alt="bubbagump" width="256" height="256">
+                </div>
+                <div class="modal-body">
+                   <p>Peach main that watches too many Sheik videos that says he can play CS:GO, but has no clue that is going on. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat. </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+           </div>
+           <div id="zacModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Table Bread</h4>
+                  <img src="img/zac.jpg" class="img-circle hvr-grow" alt="bubbagump" width="256" height="256">
+                </div>
+                <div class="modal-body">
+                   <p>Peach main that watches too many Sheik videos that says he can play CS:GO, but has no clue that is going on. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat. </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+           </div>
+           <div id="vincentModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">BubbaGump</h4>
+                  <img src="img/vincent.jpg" class="img-circle hvr-grow" alt="bubbagump" width="256" height="256">
+                </div>
+                <div class="modal-body">
+                  <p>This guy plays Protoss for the Berkeley team, but does nothing and is carried by the rest of the team. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+           </div>
+           <div id="speakerModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Speakers</h4>
+                </div>
+                <div class="modal-body">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+      </div>
+     </div>
+     <div id="registerModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Register Now!</h4>
+                </div>
+                <div class="modal-body">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                  <div class="row">
+                   <div class="col-md-4">
+                    <a class="hvr-grow" data-toggle="modal" data-target="#religiousModal">
+                    <i class="fa fa-plus fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p>For Religious</p></a>
+                     <div id="religiousModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">For Religious</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="col-md-4">
+                   <a class="hvr-grow" data-toggle="modal" data-target="#exhibitionModal">
+                    <i class="fa fa-address-book fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p>For Exhibition</p></a>
+                     <div id="exhibitionModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">For Exhibition</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="col-md-4">
+                    <a class="hvr-grow" data-toggle="modal" data-target="#hostModal">
+                    <i class="fa fa-home fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p>Volunteer to Host</p></a>
+                     <div id="hostModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Volunteer to Host</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <!-- <div class="col-md-3">
+                    <a href="#" class="btn btn-lg btn-default">Program Schedule</a>
+                   </div>
+                   <div class="col-md-3">
+                    <a href="#speakers" class="btn btn-lg btn-default">Speakers</a>
+                   </div> -->
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    <!-- </section> -->
 
      <nav class="navbar navbar-inverse navbar-bottom">
        <div class="container-fluid">
@@ -640,4 +690,5 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <script src="js/uccc.js"></script>
   </body>
