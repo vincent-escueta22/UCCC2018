@@ -24,6 +24,7 @@
      <link href="css/scrolling-nav.css" rel="stylesheet">
      <link rel="stylesheet" href="css/animate.min.css">
      <link href="css/hover-min.css" rel="stylesheet">
+     <link href="css/slideshow.css" rel="stylesheet">
      <link href="css/uccc.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -143,6 +144,37 @@
       </div>
      </div>
     </section> -->
+<!--     <section>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/zac.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/zac.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/zac.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+    </section> -->
 
     <section id="about" class="about-section">
      <div class="container">
@@ -150,32 +182,62 @@
       <div class="col-lg-12 text-center">
        <h1 class="section-heading"> About </h1>
       </div>
-      <div class="container">
-       <!-- Example row of columns -->
-        <div class="row">
-         <div class="col-md-2">
-          <a class="hvr-grow" data-toggle="modal" data-target="#videoModal">
-          <i class="fa fa-paw fa-5x wow bounceIn" data-wow-delay=".1s"></i><h3>Theme</h3></a>
+        <div class="slideshow-container">
+         <div class="slide">
+          <div class="numbertext">1 / 5</div>
+          
+            <img src="img/matt.jpg" style="width:50%">
+            <div class="text">
+              <h1>Theme</h1>
+              <a data-toggle="modal" data-target="#themeModal" class="hvr-grow">Learn More</a>
+            </div>
+          
          </div>
-         <div class="col-md-2">
-          <a class="hvr-grow" data-toggle="modal" data-target="#videoModal">
-          <i class="fa fa-play fa-5x wow bounceIn" data-wow-delay=".1s"></i><h3>2017 Recap & 2018 Reveal</h3></a>
+         <div class="slide">
+          <div class="numbertext">2 / 5</div>
+          <img src="img/zac.jpg" style="width:50%">
+            <div class="text">
+              <h1>2017 Recap & 2018 Reveal</h1>
+              <a data-toggle="modal" data-target="#videoModal" class="hvr-grow">Learn More</a>
+            </div>
+          </div>
+         <div class="slide">
+         <div class="numbertext">3 / 5</div>
+          <img src="img/matt.jpg" style="width:50%">
+          <div class="text">
+            <h1>UCCC History</h1>
+            <a data-toggle="modal" data-target="#historyModal" class="hvr-grow">Learn More</a>
+          </div>
          </div>
-         <div class="col-md-2">
-         <a class="hvr-grow" data-toggle="modal" data-target="#historyModal">
-          <i class="fa fa-header fa-5x wow bounceIn" data-wow-delay=".1s"></i><h3>UCCC History</h3></a>
+         <div class="slide">
+          <div class="numbertext">4 / 5</div>
+          <img src="img/zac.jpg" style="width:50%">
+          <div class="text">
+            <h1>Mission Statement</h1>
+            <a data-toggle="modal" data-target="#mishModal" class="hvr-grow">Learn More</a>
+          </div>
          </div>
-         <div class="col-md-2">
-          <a class="hvr-grow" data-toggle="modal" data-target="#mishModal">
-          <i class="fa fa-ship fa-5x wow bounceIn" data-wow-delay=".1s"></i><h3>Mission Statement</h3></a>
+         <div class="slide">
+          <div class="numbertext">5 / 5</div>
+          <img src="img/matt.jpg" style="width:50%">
+          <div class="text">
+            <h1>UCCC 2018 Staff</h1>
+            <a data-toggle="modal" data-target="#staffModal" class="hvr-grow">Learn More</a>
+          </div>
          </div>
-         <div class="col-md-2">
-          <a class="hvr-grow" data-toggle="modal" data-target="#staffModal">
-          <i class="fa fa-user-circle-o fa-5x wow bounceIn" data-wow-delay=".1s"></i><h3>UCCC 2018 Staff</h3></a>
-         </div>
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>  
         </div>
       </div>
-     </div>
      </div>
     </section>
 
@@ -334,8 +396,26 @@
     </section>
 
     <!-- <section id="modals"> -->
-    <div id="videoModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+            <div id="themeModal" class="modal fade" role="dialog">
+             <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Theme</h4>
+                </div>
+                <div class="modal-body">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div id="videoModal" class="modal fade" role="dialog">
+             <div class="modal-dialog">
 
               <!-- Modal content-->
               <div class="modal-content">

@@ -236,13 +236,13 @@ article .article-content .article-content-inner p {
     font-weight: 300;
     color: rgba(255,255,255,.7);
 }*/
-/*
+
 @media(min-width:768px) {
     article {
         min-height: 500px;
     }
 
-
+/*
     article .article-content {
         position: absolute;
         top: 55%;
@@ -274,7 +274,7 @@ article .article-content .article-content-inner p {
         font-size: 18px;
     }
 }
-*/
+
 
 /*.nav-color:hover {
 	background-color: black;
