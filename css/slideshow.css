@@ -32,7 +32,7 @@
   border-radius: 3px 0 0 3px;
 }
 
-/* Position the "next button" to the right */
+/* Position the "prev button" to the left */
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
