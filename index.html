@@ -11,6 +11,9 @@
 
     <title>UCCC 2018</title>
 
+    <!-- This is the font used for the website -->
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,6 +29,7 @@
      <link href="css/hover-min.css" rel="stylesheet">
      <link href="css/slideshow.css" rel="stylesheet">
      <link href="css/uccc.css" rel="stylesheet">
+
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -110,14 +114,6 @@
           </div>
         </div>
     </header>
-    <article>
-      <div class="article-content">
-         <div class="article-content-inner">
-              <h1>
-              "What is born of flesh is flesh and what is born of spirit is spirit.  Do not be amazed that I told you, ‘You must be born from above.’ The wind blows where it wills, and you can hear the sound it makes, but you do not know where it comes from or where it goes; so it is with everyone who is born of the Spirit.” - John 3:6‭-‬8 NABRE
-              </h1>
-          </div>
-    </article>
     <!-- <section id="theme">
      <div class="section-content">
       <div class="section-content-inner">
@@ -144,37 +140,7 @@
       </div>
      </div>
     </section> -->
-<!--     <section>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="img/zac.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="img/zac.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="img/zac.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
-    </section> -->
+    <!-- ` -->
 
     <section id="about" class="about-section">
      <div class="container">
@@ -183,64 +149,112 @@
        <h1 class="section-heading"> About </h1>
       </div>
         <div class="slideshow-container">
-         <div class="slide">
-          <div class="numbertext">1 / 5</div>
-          
-            <img src="img/matt.jpg" style="width:50%">
+         <div class="slide fade">
+          <div class="row">
+          <!-- <div class="numbertext">1 / 5</div> -->
+           <div class="col-md-6">
+            <i class="fa fa-user fa-5x wow bounceIn" data-wow-delay=".1s"></i>
+           </div>
+           <div class="col-md-6">
             <div class="text">
-              <h1>Theme</h1>
-              <a data-toggle="modal" data-target="#themeModal" class="hvr-grow">Learn More</a>
+              <h2>Theme</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat.<a data-toggle="modal" data-target="#themeModal" class="hvr-grow">Learn More</a></p>
             </div>
-          
-         </div>
-         <div class="slide">
-          <div class="numbertext">2 / 5</div>
-          <img src="img/zac.jpg" style="width:50%">
+           </div>
+           </div>
+          </div>
+         <div class="slide fade">
+          <div class="row">
+          <!-- <div class="numbertext">2 / 5</div> -->
+          <div class="col-md-6">
+            <i class="fa fa-users fa-5x wow bounceIn" data-wow-delay=".1s"></i>
+          </div>
+          <div class="col-md-6">
             <div class="text">
-              <h1>2017 Recap & 2018 Reveal</h1>
-              <a data-toggle="modal" data-target="#videoModal" class="hvr-grow">Learn More</a>
+              <h2>2017 Recap</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat.<a data-toggle="modal" data-target="#revealModal" class="hvr-grow">Learn More</a></p>
             </div>
+            </div>
+           </div>
           </div>
-         <div class="slide">
-         <div class="numbertext">3 / 5</div>
-          <img src="img/matt.jpg" style="width:50%">
+        <div class="slide fade">
+          <div class="row">
+         <div class="col-md-6">
+            <i class="fa fa-user fa-5x wow bounceIn" data-wow-delay=".1s"></i>
+          </div>
+          <div class="col-md-6">
+            <div class="text">
+              <h2>2018 Reveal</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat.<a data-toggle="modal" data-target="recapModal" class="hvr-grow">Learn More</a></p>
+            </div>
+            </div>
+           </div>
+          </div>
+         <div class="slide fade">
+         <!-- <div class="numbertext">3 / 5</div> -->
+         <div class="row">
+         <div class="col-md-6">
+          <i class="fa fa-id-badge fa-5x wow bounceIn" data-wow-delay=".1s"></i> 
+         </div>
+         <div class="col-md-6">
           <div class="text">
-            <h1>UCCC History</h1>
-            <a data-toggle="modal" data-target="#historyModal" class="hvr-grow">Learn More</a>
+            <h2>UCCC History</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat.<a data-toggle="modal" data-target="#historyModal" class="hvr-grow">Learn More</a></p>
+          </div>
           </div>
          </div>
-         <div class="slide">
-          <div class="numbertext">4 / 5</div>
-          <img src="img/zac.jpg" style="width:50%">
+         </div>
+         <div class="slide fade">
+         <div class="row">
+          <!-- <div class="numbertext">4 / 5</div> -->
+         <div class="col-md-6">
+          <i class="fa fa-users fa-5x wow bounceIn" data-wow-delay=".1s"></i>
+         </div>
+         <div class="col-md-6">
           <div class="text">
-            <h1>Mission Statement</h1>
-            <a data-toggle="modal" data-target="#mishModal" class="hvr-grow">Learn More</a>
+            <h2>Mission Statement</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat.<a data-toggle="modal" data-target="#mishModal" class="hvr-grow">Learn More</a></p>
           </div>
          </div>
-         <div class="slide">
-          <div class="numbertext">5 / 5</div>
-          <img src="img/matt.jpg" style="width:50%">
+         </div>
+         </div>
+         <div class="slide fade">
+         <div class="row">
+          <!-- <div class="numbertext">5 / 5</div> -->
+          <div class="col-md-6">
+          <i class="fa fa-id-badge fa-5x wow bounceIn" data-wow-delay=".1s"></i>
+          </div>
+          <div class="col-md-6">
           <div class="text">
-            <h1>UCCC 2018 Staff</h1>
-            <a data-toggle="modal" data-target="#staffModal" class="hvr-grow">Learn More</a>
+            <h2>UCCC 2018 Staff</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat.<a data-toggle="modal" data-target="#staffModal" class="hvr-grow">Learn More</a></p>
+          </div>
+          </div>
           </div>
          </div>
-         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         <a class="prev hvr-grow" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next hvr-grow" onclick="plusSlides(1)">&#10095;</a>
+         <div style="text-align:center">
+          <span class="dot hvr-grow" onclick="currentSlide(1)"></span> 
+          <span class="dot hvr-grow" onclick="currentSlide(2)"></span> 
+          <span class="dot hvr-grow" onclick="currentSlide(3)"></span> 
+          <span class="dot hvr-grow" onclick="currentSlide(4)"></span>
+          <span class="dot hvr-grow" onclick="currentSlide(5)"></span>  
+          <span class="dot hvr-grow" onclick="currentSlide(6)"></span>  
+        </div>
         </div>
         <br>
-
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>  
-        </div>
       </div>
      </div>
     </section>
-
+    <article>
+      <div class="article-content">
+         <div class="article-content-inner">
+              <h1>
+              "What is born of flesh is flesh and what is born of spirit is spirit.  Do not be amazed that I told you, ‘You must be born from above.’ The wind blows where it wills, and you can hear the sound it makes, but you do not know where it comes from or where it goes; so it is with everyone who is born of the Spirit.” - John 3:6‭-‬8 NABRE
+              </h1>
+          </div>
+    </article>
     <section id="speakers" class="speaker-section">
      <div class="section-content">
       <div class="col-lg-12 text-center">
@@ -294,6 +308,9 @@
        <div class="col-md-12">
         <a class="hvr-grow" data-toggle="modal" data-target="#speakerModal">
           <i class="fa fa-users fa-5x wow bounceIn" data-wow-delay=".1s"></i><h3>More Speakers</h3></a>
+          </div>
+          </div>
+          </div>
     </section>
     <article>
       <div class="article-content">
@@ -319,6 +336,14 @@
       </div>
      </div>
     </section>
+    <article>
+      <div class="article-content">
+         <div class="article-content-inner">
+              <h1>
+              When the time for Pentecost was fulfilled, they were all in one place together.  And suddenly there came from the sky a noise like a strong driving wind, and it filled the entire house in which they were.  Then there appeared to them tongues as of fire, which parted and came to rest on each one of them.  And they were all filled with the holy Spirit and began to speak in different tongues, as the Spirit enabled them to proclaim. - Acts 2:1‭-‬4 NABRE
+              </h1>
+          </div>
+    </article>
     <section id="donate" class="donate-section">
      <div class="section-content">
       <div class="container">
@@ -414,14 +439,32 @@
               </div>
             </div>
           </div>
-            <div id="videoModal" class="modal fade" role="dialog">
+            <div id="recapModal" class="modal fade" role="dialog">
              <div class="modal-dialog">
 
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">2017 Recap & 2018 Reveal</h4>
+                  <h4 class="modal-title">2017 Recap</h4>
+                </div>
+                <div class="modal-body">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="revealModal" class="modal fade" role="dialog">
+             <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">2018 Reveal</h4>
                 </div>
                 <div class="modal-body">
                   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum turpis nisi, tristique lobortis metus ullamcorper vel. Curabitur sagittis commodo nibh sit amet placerat. Sed vel nunc at neque ultricies molestie in id nulla. Integer in dapibus erat, non tempor velit. In turpis turpis, lobortis nec ligula ut, tempor gravida massa. In finibus auctor sapien, eu pulvinar mi feugiat feugiat. Nulla facilisi. In elementum massa aliquet mauris aliquam porta. Nam varius nisl orci, id finibus leo lobortis hendrerit. Nullam fringilla, urna id semper dignissim, eros purus dictum orci, sed ultricies metus nunc sed nibh. Aliquam erat volutpat.</p>
