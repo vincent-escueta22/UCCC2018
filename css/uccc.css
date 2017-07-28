@@ -41,8 +41,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/background.gif);
-    background-position: center;
+    background: url(../img/background.gif) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-s`ize: cover;
     background-size: cover;
@@ -111,14 +110,14 @@ header .header-content .header-content-inner p {
 }
 
 @-webkit-keyframes background {
-  from {background-image: 'url(../img/background.gif)'} 
-  to {background-image:  'url(../img/background.jpg)'}
+  from {background: 'url(../img/background.gif)'} 
+  to {background:  'url(../img/background.jpg)'}
   f
 }
 
 @keyframes background {
-  from {background-image: 'url(../img/background.gif)'} 
-  to {background-image:  'url(../img/background.jpg)'
+  from {background: 'url(../img/background.gif)'} 
+  to {background:;  'url(../img/background.jpg)'
 }
 
 section {
