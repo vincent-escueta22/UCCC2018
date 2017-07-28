@@ -1,3 +1,5 @@
+*{margin: 0; padding: 0;}
+
 .navbar {
    background-color: transparent;
    background: transparent;
@@ -39,12 +41,14 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/background.gif);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-s`ize: cover;
     background-size: cover;
     -o-background-size: cover;
+    -webkit-animation: background 2s 1 forwards;
+    animation: background 2s 1 forwards;
 }
 
 header .header-content {
@@ -100,13 +104,31 @@ header .header-content .header-content-inner p {
     }
 }
 
+.background {
+  -webkit-animation: background 2s 1 forwards;
+  animation: background 2s 1 forwards;
+
+}
+
+@-webkit-keyframes background {
+  from {background-image: 'url(../img/background.gif)'} 
+  to {background-image:  'url(../img/background.jpg)'}
+  f
+}
+
+@keyframes background {
+  from {background-image: 'url(../img/background.gif)'} 
+  to {background-image:  'url(../img/background.jpg)'
+}
+
 section {
     position: relative;
     width: 100%;
-    min-height: auto;
+    /*min-height: auto;*/
     text-align: center;
-    color: #fff;
+    /*color: #fff;*/
     font-family:"Lato";
+    font-color: #D9B310;
     background-color: #1D2731;
 }
 
@@ -135,7 +157,7 @@ section .section-content p {
 article {
 	position: relative;
 	text-align: center;
-	min-height: auto;
+	/*min-height: auto;*/
     background-color: #0B3C5D;
     /*position: relative;
     width: 100%;

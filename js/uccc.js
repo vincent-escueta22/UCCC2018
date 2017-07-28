@@ -32,3 +32,11 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+// var stay = setTimeout(dontmove(), 2000);
+// clearTimeout(stay);
+
+// $(document).function dontmove() {
+//     $('header').css('background-image', 'url(../img/background.jpg)');
+//     clearInverval(stay);
+// }
