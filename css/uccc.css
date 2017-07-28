@@ -40,17 +40,27 @@ header {
     width: 100%;
     min-height: auto;
     text-align: center;
-    color: #fff;
-    background: url(../img/background.gif) no-repeat center center fixed;
+    color: #000;
+    background: url(../img/background.gif) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-s`ize: cover;
     background-size: cover;
     -o-background-size: cover;
-    -webkit-animation: background 0s;
+/*    -webkit-animation: background 0s;
     -webkit-animation-delay: 2.8s;
     animation: background 0s;
-    animation-delay: 2.8s
+    animation-delay: 2.8s*/
 }
+/*
+@-webkit-keyframes background {
+  from {background: 'url(../img/background.gif)'} 
+  to {background:  'url(../img/background.jpg)'}
+}
+
+@keyframes background {
+  from {background: 'url(../img/background.gif)'} 
+  to {background: 'url(../img/background.jpg)'}
+}*/
 
 header .header-content {
     position: relative;
@@ -74,7 +84,15 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    color: rgba(0,0,0,1);
+}
+
+header .header-content .header-content-inner h3 {
+    color: rgba(0,0,0,1);
+}
+
+header .header-content .header-content-inner a {
+    color: rgba(0,0,0,1);
 }
 
 @media(min-width:768px) {
@@ -84,7 +102,7 @@ header .header-content .header-content-inner p {
 
     header .header-content {
         position: absolute;
-        top: 50%;
+        top: 45%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -105,22 +123,29 @@ header .header-content .header-content-inner p {
     }
 }
 
-.background {
-  -webkit-animation: background 2s 1 forwards;
-  animation: background 2s 1 forwards;
 
+
+
+header .header-content .nothing {
+  -webkit-animation: nothing;
+  -webkit-animation-duration: 8s;
+  animation: nothing;
+  animation-duration: 8s;
 }
 
-@-webkit-keyframes background {
-  from {background: 'url(../img/background.gif)'} 
-  to {background:  'url(../img/background.jpg)'}
-  f
+@-webkit-keyframes nothing {
+  0% {opacity: 0} 
+  50% {opacity: 0}
+  100% {opacity: 0.7}
 }
 
-@keyframes background {
-  from {background: 'url(../img/background.gif)'} 
-  to {background:;  'url(../img/background.jpg)'
+@keyframes nothing {
+  0% {opacity: 0} 
+  50% {opacity: 0}
+  100% {opacity: 0.7}
 }
+
+
 
 section {
     position: relative;

@@ -48,7 +48,7 @@
     <![endif]-->
   </head>
 
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="setTimeout(dontmove, 4000);">
 
     <!-- <div class="site-wrapper"> -->
 
@@ -103,14 +103,17 @@
       <!-- </div> -->
 
     <!-- </div> -->
-    <header class="header-section">
+    <header class="header-section" id="frontpage">
        <div class="header-content">
-          <div class="header-content-inner">
-            <h1 class="cover-heading">Born of the Spirit</h1>
-            <hr>
-            <p class="lead">Where University of California Catholics Unite</p>
-            <a href="#about" class="hvr-grow page-scroll"><i class="fa fa-angle-double-down fa-5x wow bounceIn" data-wow-delay=".1s"></i><h2>Learn More!</h2></a>
-            <h3>or <a data-toggle="modal" data-target="#registerModal">Register Now!</a></h3>
+          <div class="nothing fade-header header-content-inner">
+            <!-- <div class="fade"> -->
+              <!-- <h1 class="cover-heading">Born of the Spirit</h1>
+              <hr>
+              <p class="lead">Where University of California Catholics Unite</p> -->
+              <a href="#about" class="hvr-grow page-scroll"><i class="fa fa-angle-double-down fa-5x wow bounceIn" data-wow-delay=".1s"></i><h2>Learn More!</h2></a>
+              <h3>or <a data-toggle="modal" data-target="#registerModal" class="hvr-grow">  Register Now!</a></h3>
+            <!-- <button onclick="setTimeout(dontmove, 6000);">yay</button> -->
+            <!-- </div> -->
           </div>
         </div>
     </header>
@@ -814,4 +817,5 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
     <script src="js/uccc.js"></script>
+    <script src="js/header.js"></script>
   </body>
