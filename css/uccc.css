@@ -46,8 +46,10 @@ header {
     -moz-background-s`ize: cover;
     background-size: cover;
     -o-background-size: cover;
-    -webkit-animation: background 2s 1 forwards;
-    animation: background 2s 1 forwards;
+    -webkit-animation: background 0s;
+    -webkit-animation-delay: 2.8s;
+    animation: background 0s;
+    animation-delay: 2.8s
 }
 
 header .header-content {
