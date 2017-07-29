@@ -46,11 +46,50 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-/*    -webkit-animation: background 0s;
-    -webkit-animation-delay: 2.8s;
-    animation: background 0s;
-    animation-delay: 2.8s*/
+    -webkit-animation: background 0.1s forwards;
+    -webkit-animation-delay: 4.1s;
+    animation: background 0.1s forwards;
+    animation-delay: 4.1s;
 }
+/*
+@-webkit-keyframes background {
+  0% {background: transparent} 
+  100% {background: transparent}
+}
+
+@keyframes background {
+  0% {background: transparent}  
+  100% {background: transparent}
+}*/
+
+
+
+/*img .bg {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #000;
+    background: url(../img/background.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-animation: bg 4.1s forwards;
+    animation: bg 4.1s forwards;
+}
+
+@-webkit-keyframes bg {
+  0% {opacity:0} 
+  99% {opacity:0}
+  100% {opacity:1}
+}
+
+@keyframes bg {
+  0% {opacity:0} 
+  99% {opacity:0} 
+  100% {opacity:1}
+}*/
 /*
 @-webkit-keyframes background {
   from {background: 'url(../img/background.gif)'} 
