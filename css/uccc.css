@@ -43,7 +43,7 @@ header {
     color: #000;
     background: url(../img/background.gif) no-repeat center center;
     -webkit-background-size: cover;
-    -moz-background-s`ize: cover;
+    -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 /*    -webkit-animation: background 0s;
