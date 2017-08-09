@@ -524,7 +524,7 @@ article .article-content .article-content-inner p {
 }
 
 .speaker-section .section-content{
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 40px;
 }
 
@@ -536,4 +536,33 @@ article .article-content .article-content-inner p {
     padding-top: 50px;
 }
 
+.register-section .section-content{
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
 
+.register-section .section-content .register-buttons {
+    padding-top: 110px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.register-section .section-content .register-buttons .reg-sec {
+    border-style: ridge;
+}
+
+.donate-section .section-content{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.contact-section .section-content{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+button {
+    background: #000;
+    font: bnb;
+    font-size: 24px;
+}
