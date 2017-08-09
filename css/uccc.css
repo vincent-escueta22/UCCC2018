@@ -1,19 +1,43 @@
 *{margin: 0; padding: 0;}
 
+@font-face {
+    font-family: bnt;
+    src: url(../fonts/BebasNeueThin.otf);
+
+}
+@font-face {
+    font-family: ml;
+    src: url(../fonts/Montserrat-Light.otf);
+
+}
+@font-face {
+    font-family: bnb;
+    src: url(../fonts/BebasNeueBold.otf);
+
+}
+
+
+
 .navbar {
    background-color: transparent;
    background: transparent;
    border-color: transparent;
-   text-color:#fff;
+   color: #000;
+   font-family: bnb;
+   font-size: 18px;
 }
 
-/*.navbar li { color: #fff }*/
-/*
+.navbar-brand {
+   font-size: 36px;
+}
+
+/*nav a { color: #fff }*/
+
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
     color: #f05f40!important;
     background-color: transparent;
-}*/
+}
 
 .img-responsive{
   min-height : 5000;
@@ -25,7 +49,7 @@
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: #0B3C5D !important;
+  background-color: #000 !important;
   transition: background-color 200ms linear;
 }
 
@@ -35,12 +59,55 @@ hr {
     border-width: 3px;
 }
 
+@media(min-width:768px) {
+    .navbar {
+       background-color: transparent;
+       background: transparent;
+       border-color: transparent;
+       color: #3d3d3d;
+       font-family: bnb;
+       font-size: 18px;
+    }
+
+    .navbar-brand {
+       font-size: 36px;
+    }
+
+    /*nav a { color: #fff }*/
+    /*
+    .navbar-default .nav > li.active>a,
+    .navbar-default .nav>li.active>a:focus {
+        color: #f05f40!important;
+        background-color: transparent;
+    }*/
+
+    .img-responsive{
+      min-height : 5000;
+      min-width : 5000;
+    }
+
+    .img-circle{
+      padding:15px;
+    }
+
+    .navbar-fixed-top.scrolled {
+      background-color: #000 !important;
+      transition: background-color 200ms linear;
+    }
+
+    hr {
+        max-width: 50px;
+        border-color: #fff;
+        border-width: 3px;
+    }
+}
+
 header {
     position: relative;
     width: 100%;
     min-height: auto;
     text-align: center;
-    color: #000;
+    color: #3d3d3d;
     background: url(../img/background.gif) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -157,6 +224,7 @@ header .header-content .header-content-inner a {
     header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
+        color:transparent;
         max-width: 80%;
         font-size: 18px;
     }
@@ -192,31 +260,108 @@ section {
     /*min-height: auto;*/
     text-align: center;
     /*color: #fff;*/
-    font-family:"Lato";
-    font-color: #D9B310;
-    background-color: #1D2731;
+    font-family: bnt;
+    color: #fff;
+    background-color: #fff;
+}
+
+
+
+
+section a {
+    color: #fff;
+}
+section a:hover {
+    color: #000;
 }
 
 section .section-content h1 {
-    font-size:80px;
+    font-family: bnt;
+    font-size:60px;
     font-weight: bold;
 }
 
 section .section-content h2 {
+    font-family: ml;
     font-size:28px;
+    font-weight: bold;
     font-color: #D9B310;
 }
 
 section .section-content p {
+    font-family: ml;
     font-size:14px;
 }
 
+.about-section {
+    background-color: #D1D14D;
+}
+
+.speaker-section {
+    background-color: #77C9D4;
+}
+
+.register-section {
+    background-color: #D1D14D;
+}
+
+
+.donate-section {
+    background-color: #77C9D4;
+}
+
+.contact-section {
+    background-color: #D1D14D;
+}
+/*section .section-content .section-heading{
+    font-color: #000;
+}*/
+
 /*@media(min-width:768px) {
     section {
-        min-height: 100%;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-family: bnt;
+        font-color: #000;
+        background-color: #fff;
+    }
+
+    section .section-content h1 {
+        font-family: bnt;
+        font-size:60px;
+        font-weight: bold;
+    }
+
+    section .section-content h2 {
+        font-family: ml;
+        font-size:28px;
+        font-weight: bold;
+        font-color: #D9B310;
+    }
+
+    section .section-content p {
+        font-family: ml;
+        font-size:14px;
+    }
+
+    section .section-content {
+        font-color: #000;
     }
 }*/
 
+.modal-header {
+    font-size:28px;
+    font-color: #D9B310;
+}
+
+.modal-body {
+    font-size:14px;
+}
+
+.modal-footer {
+    font-size:14px;
+}
 
 
 article {
@@ -224,6 +369,7 @@ article {
 	text-align: center;
 	/*min-height: auto;*/
     background-color: #0B3C5D;
+    /*font-size: 12px;*/
     /*position: relative;
     width: 100%;
     min-height: auto;
@@ -236,6 +382,11 @@ article {
     background-size: cover;
     -o-background-size: cover;*/
 }
+
+article h1 {
+    font-size: 18px;
+}
+
 
 /*article .article-content {
     position: relative;
@@ -314,3 +465,76 @@ article .article-content .article-content-inner p {
 	background-color: black;
 	color: white;
 }*/
+
+
+
+
+
+.navbar-default {
+    border-color: rgba(34,34,34,0);
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #000;
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: #D1D14D;
+    /*background-color:  #787878;*/
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #D1D14D!important;
+    background-color:  #787878;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color:  #787878;
+}
+
+
+/*SPECIFIC SECTION STUFF*/
+
+.about-section .slideshow-container {
+    padding-bottom: 20px;
+}
+
+.about-section .slideshow-container p{
+    font-size: 18px;
+}
+
+.speaker-section .section-content{
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+
+.speaker-section .section-content .speakers-two{
+    padding-top: 50px;
+}
+
+.speaker-section .section-content .more-speakers{
+    padding-top: 50px;
+}
+
+

@@ -25,7 +25,7 @@ $(document).scroll(function() {
   if (scrollPos < top2 - 50) {
     $('.navbar').css('background-color', 'transparent');
   } else {
-    $('.navbar').css('background-color', ' #328CC1');
+    $('.navbar').css('background-color', ' #267F7A');
      $('.navbar').css('opacity', '1');
   }
 });
