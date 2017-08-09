@@ -293,26 +293,6 @@ section .section-content p {
     font-size:14px;
 }
 
-.about-section {
-    background-color: #D1D14D;
-}
-
-.speaker-section {
-    background-color: #77C9D4;
-}
-
-.register-section {
-    background-color: #D1D14D;
-}
-
-
-.donate-section {
-    background-color: #77C9D4;
-}
-
-.contact-section {
-    background-color: #D1D14D;
-}
 /*section .section-content .section-heading{
     font-color: #000;
 }*/
@@ -468,8 +448,6 @@ article .article-content .article-content-inner p {
 
 
 
-
-
 .navbar-default {
     border-color: rgba(34,34,34,0);
     background-color: #fff;
@@ -515,6 +493,27 @@ article .article-content .article-content-inner p {
 
 
 /*SPECIFIC SECTION STUFF*/
+
+.about-section {
+    background: #D1D14D;
+}
+
+.speaker-section {
+    background: #77C9D4;
+}
+
+.register-section {
+    background: #D1D14D;
+}
+
+
+.donate-section {
+    background: #77C9D4;
+}
+
+.contact-section {
+    background: #D1D14D;
+}
 
 .about-section .slideshow-container {
     padding-bottom: 20px;
