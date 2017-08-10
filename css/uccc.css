@@ -561,16 +561,15 @@ article .article-content .article-content-inner p {
     padding-bottom: 20px;
 }
 
-button {
-    background: #000;
-    font: bnb;
-    font-size: 24px;
-}
 
 
 button.register-button {
+    background: #000;
     color: #fff;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
+    padding: 5px 10px 5px 10px;
+    font-family: bnb;
+    font-size: 20px;
 }
 /* accordion */
 button.accordion {
@@ -620,6 +619,11 @@ div.panel-first {
     margin-top: -20px;
     margin-bottom: 20px;
 }
+
+/*.reg-sec h3{
+    font-size: 32px;
+    font-family: bnb;
+}*/
 
 button.accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */

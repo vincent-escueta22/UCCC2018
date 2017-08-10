@@ -35,27 +35,34 @@ function showSlides(n) {
 
 // accordion
 
-var acc = document.getElementsByClassName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
+var accord = 1;
+showAccordian(accord);
 
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-        if (panel.style.maxHeight){
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        } 
-    }
+
+function showAccordian(n) {
+  var i;
+  var acc = document.getElementsByClassName("accordion");
+  for (i = 0; i < acc.length; i++) {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = acc[i].nextElementSibling;
+          if (i != n-1) {
+              panel.style.display = "none";
+              panel.style.maxHeight = null;
+              acc[i].className = acc[i].className.replace(" active", "");
+          } else {
+              acc[i].className += " active";
+              panel.style.display = "block";
+              panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+      // }
+      // acc[i].mouseout = function(){
+      //      panel.style.display = "none";
+      //      panel.style.maxHeight = null;
+      // }
+  }
 }
 

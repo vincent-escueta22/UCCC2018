@@ -26,6 +26,7 @@
      <link rel="stylesheet" href="main.css">
      <link href="css/scrolling-nav.css" rel="stylesheet">
      <link rel="stylesheet" href="css/animate.min.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
      <link href="css/hover-min.css" rel="stylesheet">
      <link href="css/slideshow.css" rel="stylesheet">
      
@@ -122,7 +123,7 @@
                 </div>
                 <div class="col-md-3">
                   <a href="#about" class="hvr-grow page-scroll"><i class="fa fa-angle-double-down fa-5x wow bounceIn" data-wow-delay=".1s"></i><h2>Learn More!</h2></a>
-                  <h3>or <a data-toggle="modal" data-target="#registerModal" class="hvr-grow">  Register Now!</a></h3>
+                  <h3>or <a href="#register" class="page-scroll hvr-grow">  Register Now!</a></h3>
                 </div>
               </div>
             <!-- <button onclick="setTimeout(dontmove, 6000);">yay</button> -->
@@ -351,11 +352,11 @@
       <div class="register-buttons">
         <div class="text-center">
         <div class="reg-sec">
-          <button class="accordion">
+          <button class="accordion" onclick="showAccordian(1)">
           <i class="fa fa-id-badge wow bounceIn" data-wow-delay=".1s"></i>
           Students
           </button>
-            <div class="panel-first">
+            <div class="panel">
                <p>Late (2/1-2/10): $115</p>
 
                <p>*Berkeley students who volunteer to host visiting students will receive a $10 discount for Early Bird, Regular, or Late Registration</p>
@@ -363,20 +364,20 @@
                <p>*Housing from the generosity of host students at Berkeley will be provided on a first come, first serve basis</p>
 
                <p>*Finances shouldn’t be the reason you can’t join us! Please email uccc2017@gmail.com for a scholarship application, and we will try our best to work something out. We really hope you can join us for UCCC 2018!</p>
-               <p><button class="hvr-grow register-button" href="https://uccc.typeform.com/to/eH2OLd" target="_blank">Yup This send you somewhere</button>
+               <p><button class="hvr-grow register-button w3-round-xxlarge" href="https://uccc.typeform.com/to/eH2OLd" target="_blank">Register now!</button>
                </p>
             </div>
-            <button class="accordion">
+            <button class="accordion" onclick="showAccordian(2)">
           <i class="fa fa-plus wow bounceIn" data-wow-delay=".1s"></i>
             For Religious</button>
             <div class="panel">
                <p>UCCC is happy to provide visiting priests, deacons, seminarians, and religious complementary registration!</p>
-               <p><button class="hvr-grow register-button" href="https://uccc.typeform.com/to/eH2OLd" target="_blank">Yup This send you somewhere</button>
+               <p><button class="hvr-grow register-button w3-round-xxlarge" href="https://uccc.typeform.com/to/eH2OLd" target="_blank">Register now!</button>
                </p>
             </div>
 
-            <button class="accordion">
-            <i class="fa fa-address-book wow bounceIn" data-wow-delay=".1s"></i>
+            <button class="accordion" onclick="showAccordian(3)">
+            <i class="fa fa-users wow bounceIn" data-wow-delay=".1s"></i>
             For Exhibition
             </button>
             
@@ -393,11 +394,11 @@
               <p>Because UCCC is a completely volunteer-based, student-run organization, we kindly ask organizations for a donation of $100.</p>
 
               <p>For a donation of $200+, become a “Friend of the UCCC” and receive a half page on our conference booklet to promote your organization and recognition on our website!</p>
-              <p><button class="hvr-grow register-button" href="https://uccc.typeform.com/to/eH2OLd" target="_blank">Yup This send you somewhere</button></p>
+              <p><button class="hvr-grow register-button w3-round-xxlarge" href="https://uccc.typeform.com/to/eH2OLd" target="_blank">Register now!</button></p>
 
               </div>
             
-          <button class="accordion">
+          <button class="accordion" onclick="showAccordian(4)">
           <i class="fa fa-home wow bounceIn" data-wow-delay=".1s"></i>
           Volunteer to Host</button>
             <div class="panel">
@@ -407,7 +408,7 @@
               <p>In the spirit of hospitality and fellowship, UCCC participants will be offered simple housing in Berkeley students’ apartments or dorms on a first come, first serve basis.</p>
 
               <p>Your generous hospitality is needed to help make UCCC a success!</p>
-              <p><button class="hvr-grow register-button" href="https://uccc.typeform.com/to/eH2OLd" target="_blank">Yup This send you somewhere</button></p>
+              <p><button class="hvr-grow register-button w3-round-xxlarge" href="https://uccc.typeform.com/to/eH2OLd" target="_blank">Register now!</button></p>
               </div>
 
               </div>
@@ -431,7 +432,7 @@
             <p>*Housing from the generosity of host students at Berkeley will be provided on a first come, first serve basis</p>
 
             <p>*Finances shouldn’t be the reason you can’t join us! Please email uccc2017@gmail.com for a scholarship application, and we will try our best to work something out. We really hope you can join us for UCCC 2018!</p>
-            <button class="hvr-grow" href="https://uccc.typeform.com/to/eH2OLd" target="_blank">Yup This send you somewhere</button>
+            <button class="hvr-grow" href="https://uccc.typeform.com/to/eH2OLd" target="_blank">Register now!</button>
            </div>
          </div>
 
@@ -441,7 +442,7 @@
             <i class="fa fa-plus fa-3x wow bounceIn" data-wow-delay=".1s"></i>
             <br/>
             <p>UCCC is happy to provide visiting priests, deacons, seminarians, and religious complementary registration!</p>
-            <button class="hvr-grow"  href="https://uccc.typeform.com/to/ooPVRa" target="_blank">Yup This send you somewhere</button>
+            <button class="hvr-grow"  href="https://uccc.typeform.com/to/ooPVRa" target="_blank">Register now!</button>
            </div>
          </div>
            
@@ -462,7 +463,7 @@
             <p>Because UCCC is a completely volunteer-based, student-run organization, we kindly ask organizations for a donation of $100.</p>
 
             <p>For a donation of $200+, become a “Friend of the UCCC” and receive a half page on our conference booklet to promote your organization and recognition on our website!</p>
-            <button class="hvr-grow" href="https://uccc.typeform.com/to/W85zGo" target="_blank">Yup This send you somewhere</button>
+            <button class="hvr-grow" href="https://uccc.typeform.com/to/W85zGo" target="_blank">Register now!</button>
            </div>
          </div>
 
@@ -478,7 +479,7 @@
             <p>In the spirit of hospitality and fellowship, UCCC participants will be offered simple housing in Berkeley students’ apartments or dorms on a first come, first serve basis.</p>
 
             <p>Your generous hospitality is needed to help make UCCC a success!</p>
-            <button class="hvr-grow" href="https://uccc.typeform.com/to/gDaayy" target="_blank">Yup This send you somewhere</button>
+            <button class="hvr-grow" href="https://uccc.typeform.com/to/gDaayy" target="_blank">Register now!</button>
            </div>
          </div>
         </div> -->
@@ -509,13 +510,13 @@
           <div class="col-lg-6 col-md-6 text-center">
                         <a class="hvr-grow" href="#"" target="_blank">
                         <i class="fa fa-paypal fa-5x wow bounceIn" data-wow-delay=".1s"></i>
-                        <p>Via Paypal</p>
+                        <h2>Via Paypal</h2>
                         </a>
           </div>
           <div class="col-lg-6 col-md-6 text-center">
                       <a class="hvr-grow" href="#" target="_blank">
                       <i class="fa fa-dollar fa-5x wow bounceIn" data-wow-delay=".1s"></i>
-                      <p>Via GoFundMe</p>
+                      <h2>Via GoFundMe</h2>
                       </a>
           </div>
         </div>
@@ -544,19 +545,19 @@
           <div class="col-lg-3 col-md-3 text-center">
                         <a class="hvr-grow" href="https://www.facebook.com/uccatholics/" target="_blank">
                         <i class="fa fa-facebook fa-5x wow bounceIn" data-wow-delay=".1s"></i>
-                        <p>Facebook</p>
+                        <h2>Facebook</h2>
                         </a>
           </div>
           <div class="col-lg-3 col-md-3 text-center">
                       <a class="hvr-grow" href="https://www.instagram.com/uccatholics2018/" target="_blank">
                       <i class="fa fa-instagram fa-5x wow bounceIn" data-wow-delay=".1s"></i>
-                      <p>Instagram</p>
+                      <h2>Instagram</h2>
                       </a>
           </div>
           <div class="col-lg-3 col-md-3 text-center">
                       <a class="hvr-grow" href="mailto:uccc2017@gmail.com" target="_blank">
                       <i class="fa fa-envelope-o fa-5x wow bounceIn" data-wow-delay=".1s"></i>
-                      <p>Email</p>
+                      <h2>Email</h2>
                       </a>
           </div>
           <div class="col-lg-3 col-md-3 text-center">
@@ -564,7 +565,7 @@
                       <!-- <i class="fa fa-plus-square fa-5x wow bounceIn" data-wow-delay=".1s"></i> -->
                       <img src="img/beardove.png" height="68px" class="wow bounceIn">
                       <!-- maybe add box shadow for symettry -->
-                      <p>Berkeley Newman Hall</p>
+                      <h2>Berkeley Newman Hall</h2>
                       </a>
           </div>
         </div>
