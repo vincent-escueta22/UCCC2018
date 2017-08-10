@@ -37,7 +37,6 @@ function showSlides(n) {
 
 
 var accord = 1;
-showAccordian(accord);
 
 
 function showAccordian(n) {
@@ -65,4 +64,6 @@ function showAccordian(n) {
       // }
   }
 }
+
+showAccordian(accord);
 
