@@ -55,7 +55,7 @@ function showAccordian(n) {
           } else {
               acc[i].className += " active";
               panel.style.display = "block";
-              panel.style.maxHeight = panel.scrollHeight + "px";
+              panel.style.maxHeight = panel.scrollHeight + 50 + "px";
           } 
       // }
       // acc[i].mouseout = function(){
