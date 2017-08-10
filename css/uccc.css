@@ -563,8 +563,7 @@ article .article-content .article-content-inner p {
 
 
 
-button.register-button {
-    background: #000;
+a.register-button {
     color: #fff;
     /*padding-bottom: 10px;*/
     padding: 5px 10px 5px 10px;
