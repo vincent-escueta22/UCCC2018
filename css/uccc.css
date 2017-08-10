@@ -547,9 +547,9 @@ article .article-content .article-content-inner p {
     padding-right: 300px;
 }
 
-.register-section .section-content .register-buttons .reg-sec {
+/*.register-section .section-content .register-buttons .reg-sec {
     border-style: ridge;
-}
+}*/
 
 .donate-section .section-content{
     padding-top: 10px;
@@ -566,3 +566,70 @@ button {
     font: bnb;
     font-size: 24px;
 }
+
+
+button.register-button {
+    color: #fff;
+    padding-bottom: 10px;
+}
+/* accordion */
+button.accordion {
+    background-color: #eee;
+    font-size: 50px;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    color: #000;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    
+}
+
+div.panel-first {
+    padding: 0 18px;
+    background-color: white;
+    color: #000;
+    display: block;
+    max-height: 100;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
