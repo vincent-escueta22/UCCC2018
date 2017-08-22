@@ -290,7 +290,7 @@ section .section-content h2 {
 
 section .section-content p {
     font-family: ml;
-    font-size:14px;
+    font-size:18px;
 }
 
 /*section .section-content .section-heading{
@@ -447,6 +447,9 @@ article .article-content .article-content-inner p {
 }*/
 
 
+/*.navbar .navbar-default{*/
+    /*background color: #000;*/
+/*}*/
 
 .navbar-default {
     border-color: rgba(34,34,34,0);
@@ -456,63 +459,109 @@ article .article-content .article-content-inner p {
     transition: all .35s;
 }
 
+/*uccc2018 color*/
+
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
     font-weight: 700;
-    color: #000;
+    color: #3B7EA1;
+    /*background-color: ;*/
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #000;
+    color: #C4820E;
 }
 
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
     text-transform: uppercase;
     font-weight: 700;
-    color: #000;
+    color: #3B7EA1;
 }
+
+/*hovered section*/
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #D1D14D;
+    color: #C4820E;
     /*background-color:  #787878;*/
 }
 
+/*text and outline of current section*/
+
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #D1D14D!important;
-    background-color:  #787878;
+    color: #C4820E!important;
+    background-color:  #3B7EA1;
 }
 
+
+/*idk what this does*/
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover {
-    background-color:  #787878;
+    background-color:  #C4820E;
+    color: #FDB515!important;
 }
 
 
 /*SPECIFIC SECTION STUFF*/
 
 .about-section {
-    background: #D1D14D;
+    background: #3B7EA1;
+    color: #000;
+}
+
+.about-section a{
+    color: #000;
+}
+
+.about-section .text a{
+    color: #003262;
+    padding-bottom: 2px;
 }
 
 .speaker-section {
-    background: #77C9D4;
+    background: #C4820E;
+    color: #000;
+}
+
+.speaker-section a{
+    color: #000;
 }
 
 .register-section {
-    background: #D1D14D;
+    background: #3B7EA1;
+    color: #000;
+}
+
+.register-section a{
+    color: #000;
+}
+
+
+.register-section .panel{
+    background: #003262;
+    color: #fff;
 }
 
 
 .donate-section {
-    background: #77C9D4;
+    background: #C4820E;
+    color: #000;
+}
+
+.donate-section a{
+    color: #000;
 }
 
 .contact-section {
-    background: #D1D14D;
+    background: #3B7EA1;
+    color: #000;
+}
+
+.contact-section a{
+    color: #000;
 }
 
 .about-section .slideshow-container {
@@ -565,14 +614,15 @@ article .article-content .article-content-inner p {
 
 a.register-button {
     color: #fff;
+    background-color: #3B7EA1;
     /*padding-bottom: 10px;*/
     padding: 5px 10px 5px 10px;
     font-family: bnb;
-    font-size: 20px;
+    font-size: 24px;
 }
 /* accordion */
 button.accordion {
-    background-color: #eee;
+    background-color: #FDB515;
     font-size: 50px;
     color: #000;
     cursor: pointer;
@@ -589,7 +639,7 @@ button.accordion {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
+    background-color: #C4820E;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -630,8 +680,31 @@ body.modal-open {
 
 
 .modal {
-    color: #000;
+    color: #fff;
     font-family: ml;
 }
 
+.modal .modal-header {
+    font-family: bnb;
+    background-color: #46535E;
+}
 
+.modal .modal-header h4{
+    font-size: 36px;
+    font-family: bnb;
+}
+
+.modal .modal-body {
+    background-color: #46535E;
+}
+
+
+.modal .modal-footer {
+    background-color: #46535E;
+}
+
+.modal .modal-close {
+    background-color: #46535E;
+    border-color: #46535E;
+    color: #fff;
+}
