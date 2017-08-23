@@ -24,7 +24,8 @@
    border-color: transparent;
    color: #000;
    font-family: bnb;
-   font-size: 18px;
+   font-size: 36px;
+   /*text-shadow: 1px 1px #000;*/
 }
 
 .navbar-brand {
@@ -64,9 +65,9 @@ hr {
        background-color: transparent;
        background: transparent;
        border-color: transparent;
-       color: #3d3d3d;
+       color:#3B7EA1;
        font-family: bnb;
-       font-size: 18px;
+       font-size: 30px;
     }
 
     .navbar-brand {
@@ -452,8 +453,8 @@ article .article-content .article-content-inner p {
 /*}*/
 
 .navbar-default {
-    border-color: rgba(34,34,34,0);
-    background-color: #fff;
+    border-color: transparent;
+    background-color: transparent;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -464,7 +465,7 @@ article .article-content .article-content-inner p {
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
     font-weight: 700;
-    color: #3B7EA1;
+    color: #267f7a;
     /*background-color: ;*/
 }
 
@@ -477,7 +478,7 @@ article .article-content .article-content-inner p {
 .navbar-default .nav>li>a:focus {
     text-transform: uppercase;
     font-weight: 700;
-    color: #3B7EA1;
+    color: #267f7a;
 }
 
 /*hovered section*/
@@ -493,6 +494,7 @@ article .article-content .article-content-inner p {
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
     color: #C4820E!important;
+    boreder-color: #C4820E;
     background-color:  #3B7EA1;
 }
 
@@ -508,7 +510,9 @@ article .article-content .article-content-inner p {
 /*SPECIFIC SECTION STUFF*/
 
 .about-section {
-    background: #3B7EA1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #eee;
     color: #000;
 }
 
@@ -522,7 +526,10 @@ article .article-content .article-content-inner p {
 }
 
 .speaker-section {
-    background: #C4820E;
+    /*padding-top: 50px;
+    padding-bottom: 50px;*/
+    box-shadow: 0 0 1px 1px  #ddd;
+    background: #fff;
     color: #000;
 }
 
@@ -531,7 +538,10 @@ article .article-content .article-content-inner p {
 }
 
 .register-section {
-    background: #3B7EA1;
+    /*padding-top: 40px;*/
+    /*padding-bottom: 40px;*/
+    box-shadow: 0px 0px 1px 1px #aaa;
+    background: #eee;
     color: #000;
 }
 
@@ -541,23 +551,47 @@ article .article-content .article-content-inner p {
 
 
 .register-section .panel{
-    background: #003262;
-    color: #fff;
+    box-shadow: 0 0 1px 1px  #ccc;
+    background: #ddd;
+    color: #000;
 }
 
 
 .donate-section {
-    background: #C4820E;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 1px 1px #aaa;
+    background: #fff;
     color: #000;
 }
+
+.donate-section .section-heading {
+    padding-bottom: 25px;
+}
+
+.donate-section p {
+    padding-bottom: 25px;
+}
+
 
 .donate-section a{
     color: #000;
 }
 
 .contact-section {
-    background: #3B7EA1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 1px 1px #aaa;
+    background: #eee;
     color: #000;
+}
+
+.contact-section .section-heading {
+    padding-bottom: 25px;
+}
+
+.contact-section p {
+    padding-bottom: 25px;
 }
 
 .contact-section a{
@@ -623,6 +657,7 @@ a.register-button {
 /* accordion */
 button.accordion {
     background-color: #FDB515;
+    box-shadow: 0 0 1px 1px  #ddd;
     font-size: 50px;
     color: #000;
     cursor: pointer;
@@ -640,6 +675,7 @@ button.accordion {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.accordion.active, button.accordion:hover {
     background-color: #C4820E;
+
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -651,7 +687,20 @@ div.panel {
     display: block;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 1.0s ease-out;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    
+}
+
+div.panel.active {
+    padding: 0 18px;
+    background-color: white;
+    color: #000;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
     margin-top: -20px;
     margin-bottom: 20px;
     

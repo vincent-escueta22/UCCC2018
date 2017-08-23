@@ -49,11 +49,13 @@ function showAccordian(n) {
           /* Toggle between hiding and showing the active panel */
           var panel = acc[i].nextElementSibling;
           if (i != n-1) {
+            panel.style.tranisiton = "max-height 1.0s ease-in;"
               panel.style.display = "none";
               panel.style.maxHeight = null;
               acc[i].className = acc[i].className.replace(" active", "");
           } else {
               acc[i].className += " active";
+              panel.style.tranisiton = "max-height 1.0s ease-out;"
               panel.style.display = "block";
               panel.style.maxHeight = panel.scrollHeight + 50 + "px";
           } 
