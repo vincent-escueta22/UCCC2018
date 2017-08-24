@@ -696,7 +696,7 @@ div.panel {
     
 }
 
-div.panel.active {
+/*div.panel.active {
     padding: 0 18px;
     background-color: white;
     color: #000;
@@ -707,6 +707,17 @@ div.panel.active {
     margin-top: -20px;
     margin-bottom: 20px;
     
+}*/
+
+@-webkit-keyframes no-height {
+  from {max-height: : 0} 
+  to {max-height: 1}
+  f
+}
+
+@keyframes no-height {
+  from {opacity: 0} 
+  to {opacity: 1}
 }
 
 /*.reg-sec h3{
