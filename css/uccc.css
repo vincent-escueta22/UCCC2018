@@ -735,7 +735,7 @@ body.modal-open {
 
 .modal .modal-header {
     font-family: bnb;
-    background-color: #46535E;
+    background-color: #111;
 }
 
 .modal .modal-header h4{
@@ -744,16 +744,16 @@ body.modal-open {
 }
 
 .modal .modal-body {
-    background-color: #46535E;
+    background-color: #111;
 }
 
 
 .modal .modal-footer {
-    background-color: #46535E;
+    background-color: #111;
 }
 
 .modal .modal-close {
-    background-color: #46535E;
-    border-color: #46535E;
+    background-color: #111;
+    border-color: #111;
     color: #fff;
 }
