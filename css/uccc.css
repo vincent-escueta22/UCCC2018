@@ -340,6 +340,10 @@ section .section-content p {
     font-size:14px;
 }
 
+.modal-body a {
+    color: #000;
+}
+
 .modal-footer {
     font-size:14px;
 }
@@ -516,11 +520,11 @@ article .article-content .article-content-inner p {
     color: #000;
 }
 
-.about-section a{
+.about-section a {
     color: #000;
 }
 
-.about-section .text a{
+.about-section .text a {
     color: #003262;
     /*filter: blur(0px);*/
     /*text-shadow: 0px 0px transparent;*/
@@ -536,7 +540,7 @@ article .article-content .article-content-inner p {
     color: #000;
 }
 
-.speaker-section a{
+.speaker-section a {
     color: #000;
 }
 
@@ -548,13 +552,13 @@ article .article-content .article-content-inner p {
     color: #000;
 }
 
-.register-section a{
+.register-section a {
     color: #000;
 }
 
 
 .register-section .panel{
-    box-shadow: 0 0 1px 1px  #ccc;
+    box-shadow: 0 0 1px 1px  #000;
     background: #ddd;
     color: #000;
 }
@@ -577,7 +581,7 @@ article .article-content .article-content-inner p {
 }
 
 
-.donate-section a{
+.donate-section a {
     color: #000;
 }
 
@@ -597,7 +601,7 @@ article .article-content .article-content-inner p {
     padding-bottom: 25px;
 }
 
-.contact-section a{
+.contact-section a {
     color: #000;
 }
 
@@ -743,13 +747,17 @@ body.modal-open {
 
 
 .modal {
-    color: #fff;
+    color: #000;
     font-family: ml;
+}
+
+.modal a{
+    color: #444;
 }
 
 .modal .modal-header {
     font-family: bnb;
-    background-color: #111;
+    background-color: #fff;
 }
 
 .modal .modal-header h4{
@@ -758,16 +766,16 @@ body.modal-open {
 }
 
 .modal .modal-body {
-    background-color: #111;
+    background-color: #fff;
 }
 
 
 .modal .modal-footer {
-    background-color: #111;
+    background-color: #fff;
 }
 
 .modal .modal-close {
-    background-color: #111;
-    border-color: #111;
-    color: #fff;
+    background-color: #fff;
+    border-color: #aaa;
+    color: #000;
 }
