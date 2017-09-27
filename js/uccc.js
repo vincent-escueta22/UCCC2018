@@ -1,4 +1,4 @@
-(function($) {
+ (function($) {
     "use strict"; 
 $('body').scrollspy({
         target: '.navbar-fixed-top',
@@ -35,6 +35,30 @@ function showSlides(n) {
 
 // accordion
 
+
+// var accord = 1;
+
+
+// function showAccordian(n) {
+//   var i;
+//   var acc = document.getElementsByClassName("panel-collapse");
+//   for (i = 0; i < acc.length; i++) {
+//           /* Toggle between adding and removing the "active" class,
+//           to highlight the button that controls the panel */
+
+//           /* Toggle between hiding and showing the active panel */
+//           var panel = acc[i].nextElementSibling;
+//           if (i != n-1) {
+//               panel.style.display = "none";
+//               panel.style.maxHeight = null;
+//           } else {
+//               panel.style.display = "block";
+//               panel.style.maxHeight = panel.scrollHeight + 50 + "px";
+//           } 
+//   }
+// }
+
+// showAccordian(accord);
 
 // var accord = 1;
 
