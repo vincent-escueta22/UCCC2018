@@ -688,13 +688,19 @@ button.accordion.active, button.accordion:hover {
 /* Style the accordion panel. Note: hidden by default 
 */
 div.panel {
-    padding: 0 18px;
+    padding: 0 0px;
     background-color: white;
     color: #000;
     max-height: 200;
     overflow: hidden;
     transition: max-height 1.0s ease-out;
     
+}
+
+.panel-title a {
+    display: block;
+    padding: 10px 15px;
+    margin: -10px -15px;
 }
 
 /*div.panel.active {
