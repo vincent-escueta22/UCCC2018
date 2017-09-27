@@ -36,34 +36,34 @@ function showSlides(n) {
 // accordion
 
 
-var accord = 1;
+// var accord = 1;
 
 
-function showAccordian(n) {
-  var i;
-  var acc = document.getElementsByClassName("accordion");
-  for (i = 0; i < acc.length; i++) {
-          /* Toggle between adding and removing the "active" class,
-          to highlight the button that controls the panel */
+// function showAccordian(n) {
+//   var i;
+//   var acc = document.getElementsByClassName("panel-collapse");
+//   for (i = 0; i < acc.length; i++) {
+//           /* Toggle between adding and removing the "active" class,
+//           to highlight the button that controls the panel */
 
-          /* Toggle between hiding and showing the active panel */
-          var panel = acc[i].nextElementSibling;
-          if (i != n-1) {
-              panel.style.display = "none";
-              panel.style.maxHeight = null;
-              acc[i].className = acc[i].className.replace(" active", "");
-          } else {
-              acc[i].className += " active";
-              panel.style.display = "block";
-              panel.style.maxHeight = panel.scrollHeight + 50 + "px";
-          } 
-      // }
-      // acc[i].mouseout = function(){
-      //      panel.style.display = "none";
-      //      panel.style.maxHeight = null;
-      // }
-  }
-}
+//           /* Toggle between hiding and showing the active panel */
+//           var panel = acc[i].nextElementSibling;
+//           if (i != n-1) {
+//               panel.style.display = "none";
+//               panel.style.maxHeight = null;
+//               // acc[i].className = acc[i].className.replace(" active", "");
+//           } else {
+//               // acc[i].className += " active";
+//               panel.style.display = "block";
+//               panel.style.maxHeight = panel.scrollHeight + 50 + "px";
+//           } 
+//       // }
+//       // acc[i].mouseout = function(){
+//       //      panel.style.display = "none";
+//       //      panel.style.maxHeight = null;
+//       // }
+//   }
+// }
 
-showAccordian(accord);
+// showAccordian(accord);
 

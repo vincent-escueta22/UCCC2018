@@ -628,7 +628,7 @@ article .article-content .article-content-inner p {
 
 .register-section .section-content{
     padding-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 800px;
 }
 
 .register-section .section-content .register-buttons {
@@ -656,7 +656,7 @@ article .article-content .article-content-inner p {
 a.register-button {
     color: #fff;
     background-color: #3B7EA1;
-    /*padding-bottom: 10px;*/
+    padding-bottom: 10px;
     padding: 5px 10px 5px 10px;
     font-family: bnb;
     font-size: 24px;
@@ -679,24 +679,21 @@ button.accordion {
 
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+ /*Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.accordion.active, button.accordion:hover {
     background-color: #C4820E;
 
 }
 
-/* Style the accordion panel. Note: hidden by default */
-
+/* Style the accordion panel. Note: hidden by default 
+*/
 div.panel {
     padding: 0 18px;
     background-color: white;
     color: #000;
-    display: block;
-    max-height: 0;
+    max-height: 200;
     overflow: hidden;
     transition: max-height 1.0s ease-out;
-    margin-top: -20px;
-    margin-bottom: 20px;
     
 }
 
@@ -712,7 +709,7 @@ div.panel {
     margin-bottom: 20px;
     
 }*/
-
+/*
 @-webkit-keyframes no-height {
   from {max-height: : 0} 
   to {max-height: 1}
@@ -723,14 +720,14 @@ div.panel {
   from {opacity: 0} 
   to {opacity: 1}
 }
-
-/*.reg-sec h3{
+*/
+.reg-sec h3{
     font-size: 32px;
     font-family: bnb;
-}*/
-
+}
+/*
 button.accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\02795'; /* Unicode character for "plus" sign (+)
     font-size: 13px;
     color: #777;
     float: right;
@@ -738,7 +735,7 @@ button.accordion:after {
 }
 
 button.accordion.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796"; /* Unicode character for "minus" sign (-) 
 }
 
 body.modal-open {
