@@ -8,10 +8,19 @@
 }
 
 .slide {
-    display: none;
-    /*margin:100px;*/
-    padding:100px 80px;
+      display: none;
+      font-size: 12px;
+      /*margin:100px;*/
+  }
+
+@media(min-width:768px) {
+  .slide {
+      display: none;
+      /*margin:100px;*/
+      padding:100px 80px;
+  }
 }
+
 
 .img-container {
   /*padding-top:200px;*/

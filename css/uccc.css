@@ -336,6 +336,11 @@ section .section-content p {
     font-color: #D9B310;
 }
 
+.modal-header p {
+    font-size: 12px;
+    font-color: #D9B310;
+}
+
 .modal-body {
     font-size:14px;
 }
@@ -541,6 +546,18 @@ article .article-content .article-content-inner p {
 }
 
 .speaker-section a {
+    color: #000;
+}
+
+.schedule-section {
+    /*padding-top: 50px;
+    padding-bottom: 50px;*/
+    box-shadow: 0 0 1px 1px  #ddd;
+    background: #fff;
+    color: #000;
+}
+
+.schedule-section a {
     color: #000;
 }
 
@@ -769,8 +786,17 @@ body.modal-open {
     font-family: bnb;
 }
 
+.modal .modal-header p {
+    font-size: 14px;
+    font-family: ml;
+}
+
 .modal .modal-body {
     background-color: #fff;
+}
+
+.modal .modal-body ul{
+    margin: 10px;
 }
 
 
@@ -783,3 +809,13 @@ body.modal-open {
     border-color: #aaa;
     color: #000;
 }
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+ }
