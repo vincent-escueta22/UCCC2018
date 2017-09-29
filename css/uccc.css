@@ -563,7 +563,7 @@ article .article-content .article-content-inner p {
 
 .register-section {
     /*padding-top: 40px;*/
-    /*padding-bottom: 40px;*/
+    /*padding-bottom: -80px;*/
     box-shadow: 0px 0px 1px 1px #aaa;
     background: #eee;
     color: #000;
@@ -645,7 +645,7 @@ article .article-content .article-content-inner p {
 
 .register-section .section-content{
     padding-top: 10px;
-    padding-bottom: 800px;
+    padding-bottom: 580px;
 }
 
 .register-section .section-content .register-buttons {
