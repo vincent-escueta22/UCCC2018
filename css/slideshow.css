@@ -14,14 +14,10 @@
     padding:100px 80px;
 }
 
+
 .slideshow-container .img-container {
-    /*padding-top:200px;*/
-}
-@media(min-width:768px) {
-  .slideshow-container .img-container {
-    /*padding-top:200px;*/
-/*    margin-right:100px;
-*/  }
+  /*padding-top:200px;*/
+  margin-right:100px;
 }
 
 /* Next & previous buttons */
