@@ -114,10 +114,6 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    -webkit-animation: background 0.1s forwards;
-    -webkit-animation-delay: 4.1s;
-    animation: background 0.1s forwards;
-    animation-delay: 4.1s;
 }
 /*
 @-webkit-keyframes background {
