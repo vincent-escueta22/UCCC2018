@@ -45,7 +45,7 @@ header {
 }*/
 
 header .bg img{
-    opacity: rgba(0,0,0,.3);
+    opacity: rgba(0,0,0,1);
     width: 100%;
 }
 
