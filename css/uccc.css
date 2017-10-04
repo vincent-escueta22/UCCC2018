@@ -27,17 +27,27 @@ header {
     /*background-size: cover;*/
     /*background: url(../img/background.png) no-repeat center center;*/
     /*background-size: 500px, 1300px, auto;*/
-/*    -webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;*/
+    -o-background-size: cover;
 }
 
-/*header img.bg {
+/*header .bg {
+    position: static;
     width: 100%;
-    right: 100px;
-}*/
+    min-height: auto;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 
+header .bg img{
+    opacity: rgba(0,0,0,.3);
+}
+*/
 
 .navbar {
    background-color: transparent;
