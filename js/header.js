@@ -1,7 +1,7 @@
 function dontmove() {
 	// alert($("header").css('background'));
     // $("header").css('background', 'url("../UCCC2018/img/background.jpg") no-repeat center center'
-    $("header").css('background', 'rgba(0, 0, 0, 0) url("../img/background.png") no-repeat scroll 50% 50% / auto padding-box border-box');
+    $("header").css('background', 'url("../img/background.png") no-repeat scroll 50% 50% / auto padding-box border-box');
     $("header").css('-webkit-background-size', 'cover');
     $("header").css('-moz-background-size', 'cover');
     $("header").css('background-size', 'cover');
