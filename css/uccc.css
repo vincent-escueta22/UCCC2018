@@ -17,6 +17,27 @@
 }
 
 
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #3d3d3d;
+    background:url(../img/background.png) no-repeat center center;
+    /*background-size: cover;*/
+    /*background: url(../img/background.png) no-repeat center center;*/
+    /*background-size: 500px, 1300px, auto;*/
+/*    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;*/
+}
+
+/*header img.bg {
+    width: 100%;
+    right: 100px;
+}*/
+
 
 .navbar {
    background-color: transparent;
@@ -103,18 +124,7 @@ hr {
     }
 }
 
-header {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    text-align: center;
-    color: #3d3d3d;
-    background: url(../img/background.gif) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
+
 /*
 @-webkit-keyframes background {
   0% {background: transparent} 
