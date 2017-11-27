@@ -60,6 +60,11 @@ header .bg img{
    /*text-shadow: 1px 1px #000;*/
 }
 
+.navbar-static {
+    background-color: #fff!important;
+    box-shadow: 0 0 1px 1px  #ddd
+}
+
 .navbar-brand {
    font-size: 36px;
 }
@@ -372,9 +377,9 @@ section .section-content p {
 
 
 article {
-	position: relative;
-	text-align: center;
-	/*min-height: auto;*/
+    position: relative;
+    text-align: center;
+    /*min-height: auto;*/
     background-color: #0B3C5D;
     /*font-size: 12px;*/
     /*position: relative;
@@ -469,8 +474,8 @@ article .article-content .article-content-inner p {
 
 
 /*.nav-color:hover {
-	background-color: black;
-	color: white;
+    background-color: black;
+    color: white;
 }*/
 
 

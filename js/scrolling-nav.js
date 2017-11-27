@@ -25,6 +25,8 @@ $(document).scroll(function() {
   if (scrollPos < top2 - 50) {
     $('.navbar').css('background-color', 'transparent');
     $('.navbar').css('box-shadow', '0 0 0 0 transparent');
+    // $('.navbar-static').css('background-color', '#fff');
+    // $('.navbar-static').css('box-shadow', '0 0 1px 1px  #ddd');
   } else {
     // $('.navbar').css('background-color', '#3B7EA1');
     //  $('.navbar').css('opacity', '1');
@@ -33,6 +35,6 @@ $(document).scroll(function() {
     $('.navbar').css('box-shadow', '0 0 1px 1px  #ddd');
 
   }
+  $('.navbar-static').css('background-color', '#fff');
 });
-
 
